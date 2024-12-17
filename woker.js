@@ -1,5 +1,5 @@
 const API_BASE = 'https://api.jarvis.cx';
-const TOKEN_REFRESH_INTERVAL = 30 * 60 * 1000; // 25分钟，单位毫秒
+const TOKEN_REFRESH_INTERVAL = 25 * 60 * 1000; // 25分钟，单位毫秒
 
 export default {
   async fetch(request, env) {
