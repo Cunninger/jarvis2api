@@ -68,9 +68,9 @@ export default {
             }
           },
           assistant: {
-            id: "gpt-4o",
+            id: "gemini-1.5-pro-latest",
             model: "dify",
-            name: "GPT-4o"
+            name: "Gemini 1.5 Pro"
           }
         })
       });
