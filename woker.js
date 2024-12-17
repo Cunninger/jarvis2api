@@ -69,7 +69,7 @@ export default {
           },
           assistant: {
             id: "gemini-1.5-pro-latest",
-            model: "dify",
+            model: "dify", 
             name: "Gemini 1.5 Pro"
           }
         })
