@@ -46,7 +46,25 @@ curl --location 'https://api.jarvis.cx/api/v1/auth/sign-in' \
 ```
 
 都路过了，顺手点一个吧，感谢你的star！
-
+## 调用
+部署完 cf worker 后调用 `curl` 代码
+- 请求实例
+```
+curl --location 'https://your-worker-url.workers.dev' \
+--header 'Content-Type: application/json' \
+--data '{
+    "refreshToken": "YOUR_REFRESH_TOKEN",
+    "message": "刚把你给逆了，有个事你不知道把"
+}'
+```
+- 响应实例
+```
+{
+    "conversationId": "9f96f648-91aa-47f8-870a-d1231e33e8af",
+    "message": "哦？是什么事情呢？说来听听，我会尽力去了解的！",
+    "remainingUsage": -15
+}
+```
 ## 趋势
 <picture>
   <source
