@@ -2,7 +2,7 @@
 使用此代码需要:
 - 在Cloudflare Worker中创建一个KV命名空间（比如叫TOKEN_STORE ）
 - 在Worker设置中绑定KV：
-- `curl` 获取 `accessToken` 和 `refreshToken`
+- `curl` 获取 `refreshToken`,过期时间为1年
 ```
 curl --location 'https://api.jarvis.cx/api/v1/auth/sign-in' \
 --header 'Content-Type: application/json' \
@@ -17,7 +17,7 @@ curl --location 'https://api.jarvis.cx/api/v1/auth/sign-in' \
     id: "gpt-4o",
     model: "dify",
     name: "GPT-4o"
-}
+},
 {
     id: "gemini-1.5-pro-latest",
     model: "dify",
