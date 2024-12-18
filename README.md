@@ -12,3 +12,19 @@ curl --location 'https://api.jarvis.cx/api/v1/auth/sign-in' \
 }'
 ```
 都路过了，顺手点一个吧，感谢你的star！
+
+
+<picture>
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="https://api.star-history.com/svg?repos=star-history/star-history&type=Date&theme=dark"
+  />
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="https://api.star-history.com/svg?repos=star-history/star-history&type=Date"
+  />
+  <img
+    alt="Star History Chart"
+    src="https://api.star-history.com/svg?repos=star-history/star-history&type=Date"
+  />
+</picture>
