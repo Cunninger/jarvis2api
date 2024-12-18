@@ -3,6 +3,39 @@
 - 在Cloudflare Worker中创建一个KV命名空间（比如叫TOKEN_STORE ）
 - 在Worker设置中绑定KV：
 - 获取refreshToken
+- 目前列表中的模型，但是目前只有`Gemini 1.5 Pro`和`Gemini 1.5 Flash`可用。cf worker 代码中默认使用的是`Gemini 1.5 Pro`
+```
+{
+    id: "gpt-4o",
+    model: "dify",
+    name: "GPT-4o"
+}
+{
+    id: "gemini-1.5-pro-latest",
+    model: "dify",
+    name: "Gemini 1.5 Pro"
+},
+{
+    id: "gemini-1.5-flash-latest",
+    model: "dify",
+    name: "Gemini 1.5 Flash"
+},
+{
+    id: "gpt-4o-mini",
+    model: "dify",
+    name: "GPT-4o mini"
+},
+{
+    id: "claude-3-haiku-20240307",
+    model: "dify",
+    name: "Claude 3 Haiku"
+},
+{
+    id: "claude-3-5-sonnet-20240620",
+    model: "dify",
+    name: "Claude 3.5 Sonnet"
+}
+```
 ```
 curl --location 'https://api.jarvis.cx/api/v1/auth/sign-in' \
 --header 'Content-Type: application/json' \
