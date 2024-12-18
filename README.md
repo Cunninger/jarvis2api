@@ -11,7 +11,7 @@ curl --location 'https://api.jarvis.cx/api/v1/auth/sign-in' \
     "password": "xxx"
 }'
 ```
-- 目前列表中的模型，但是目前只有`Gemini 1.5 Pro`和`Gemini 1.5 Flash`可用。`cf worker` 代码中默认使用的是`Gemini 1.5 Pro`
+- 目前官网列表中的模型如下，但是目前只有`Gemini 1.5 Pro`和`Gemini 1.5 Flash`可用。`cf worker` 代码中默认使用的是`Gemini 1.5 Pro`
 ```
 {
     id: "gpt-4o",
